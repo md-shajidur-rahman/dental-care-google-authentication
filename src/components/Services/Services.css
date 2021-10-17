@@ -1,0 +1,15 @@
+.top-part {
+	background-image: url('https://i.ibb.co/wzn7ZWp/title-img3.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-blend-mode: overlay;
+}
+.cart {
+	transition: 0.5s;
+	height: 450px;
+}
+.cart:hover {
+	box-shadow: 2px 5px 10px gray;
+}
+.btn-position {
+}
