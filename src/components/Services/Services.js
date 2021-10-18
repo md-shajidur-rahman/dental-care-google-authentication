@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Services.css'
 const Services = () => {
     const [treatments, setTreatments] = useState([]);
@@ -9,7 +10,7 @@ const Services = () => {
         .then (data => setTreatments(data))
     }, [])
     return (
-        <div>
+        <div id='services'>
             <div className="services container mt-5">
                 <div className="top-part">
                     <h3>Our Services <span className='text-primary'> and Specialities</span></h3>
@@ -30,7 +31,11 @@ const Services = () => {
                                             <h5 className='text-primary'>{treatment.name}</h5>
                                             <p>{treatment.description}</p>
                                         </div>
-                                        <button className='btn btn-primary btn-position'>READ MORE</button>
+                                        
+                                        {/* <Link to={`/booking/${treatment.id}`}>
+                                            <button className='btn btn-primary btn-position'>Book your appointment</button>
+                                        </Link> */}
+                                        
                                     </div>
                                 </div>
                             ))
