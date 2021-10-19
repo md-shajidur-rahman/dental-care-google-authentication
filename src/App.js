@@ -8,6 +8,7 @@ import Login from './components/Login/Login';
 import Booking from './components/Booking/Booking';
 import Header from './components/Shared/Header/Header';
 import AuthProvider from './contexts/AuthProvider';
+import Footer from './components/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
                 <Booking></Booking>
               </Route>
             </Switch>
+            <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
     </div>

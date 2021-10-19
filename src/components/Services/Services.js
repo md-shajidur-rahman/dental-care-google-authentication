@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Services.css'
 const Services = () => {
@@ -25,7 +26,8 @@ const Services = () => {
                                 <div key={treatment.id} className="col-md-6 col-lg-4">
                                     <div className="cart p-3 m-2 rounded">
                                         <div className="cart-image">
-                                            <img src={treatment.img} alt="" />
+                                            <Image src={treatment.img} fluid />
+                                            {/* <img src={treatment.img} alt="" /> */}
                                         </div>
                                         <div className='mt-3'>
                                             <h5 className='text-primary'>{treatment.name}</h5>
