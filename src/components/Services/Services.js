@@ -33,10 +33,7 @@ const Services = () => {
                                             <h5 className='text-primary'>{treatment.name}</h5>
                                             <p>{treatment.description}</p>
                                         </div>
-                                        
-                                        {/* <Link to={`/booking/${treatment.id}`}>
-                                            <button className='btn btn-primary btn-position'>Book your appointment</button>
-                                        </Link> */}
+                                        <button className='btn btn-primary btn-position'>Book your appointment</button>
                                         
                                     </div>
                                 </div>
